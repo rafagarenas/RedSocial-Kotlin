@@ -12,5 +12,6 @@ minSdk = 24
 targetSdk = 34
 ```
 
+## Screenshot en la App
 
-
+![App Screenshot](https://i.imgur.com/ZyLDzLa.jpg)
