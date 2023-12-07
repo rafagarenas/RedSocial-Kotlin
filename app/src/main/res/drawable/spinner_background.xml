@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo blanco -->
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Color de fondo blanco -->
+        </shape>
+    </item>
+
+    <!-- Borde negro -->
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke
+                android:color="#000000"
+            android:width="2dp" /> <!-- Ancho del borde -->
+            <corners android:radius="4dp" /> <!-- Ajusta la esquina según sea necesario -->
+        </shape>
+    </item>
+
+</layer-list>

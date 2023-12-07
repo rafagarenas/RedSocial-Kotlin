@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.EditMyAccountActivity">
+
+    <ImageView
+        android:id="@+id/ivUserProfilePictureEdit"
+        android:layout_width="190dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btChangePassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="32dp"
+        android:width="140dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/changepassword_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etNewUserName"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_account_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/newusername_hint"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivUserProfilePictureEdit" />
+
+    <EditText
+        android:id="@+id/etNewEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/newemail_hint"
+        android:inputType="textEmailAddress"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewUserName" />
+
+    <Button
+        android:id="@+id/btSaveChanges"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="64dp"
+        android:width="140dp"
+        android:backgroundTint="#3F51B5"
+        android:text="@string/savechanges_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewEmail" />
+
+    <ImageButton
+        android:id="@+id/ibChangeProfilePicture"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="155dp"
+        android:background="@color/blue"
+        app:layout_constraintStart_toEndOf="@+id/ivUserProfilePictureEdit"
+        app:layout_constraintTop_toTopOf="@+id/ivUserProfilePictureEdit"
+        app:srcCompat="@drawable/baseline_edit_24"
+        android:contentDescription="@string/changepicture_ib" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

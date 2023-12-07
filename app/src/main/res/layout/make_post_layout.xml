@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".posts.MakePostActivity">
+
+    <TextView
+        android:id="@+id/tvNewPostUserAccountType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/accounttype_tv"
+        app:layout_constraintStart_toEndOf="@+id/ivNewPostUserPicture"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewPostUserName" />
+
+    <TextView
+        android:id="@+id/tvNewPostUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/username_tv"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivNewPostUserPicture"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNewPostDescription"
+        android:layout_width="300dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/custom_input"
+        android:ems="10"
+        android:hint="@string/initial_hint"
+        android:minHeight="48dp"
+        android:paddingStart="12dp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:lines="7"
+        android:maxLines="10"
+        app:layout_constraintEnd_toStartOf="@+id/ibNewPostPublish"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNewPostUserAccountType"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/ivNewPostUserPicture"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/simple_bottom_navigation"
+        style="@style/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_simple_navigation_bar" />
+
+    <ImageButton
+        android:id="@+id/ibNewPostSearchPicture"
+        android:layout_width="39dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/etNewPostDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_image_search" />
+
+    <ImageView
+        android:id="@+id/ivNewPostPicture"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewPostDescription"
+        android:visibility="invisible"
+        android:scaleType="centerCrop"
+        app:srcCompat="@color/black"
+        android:contentDescription="@string/postpicture_iv" />
+
+    <ImageButton
+        android:id="@+id/ibNewPostPublish"
+        android:layout_width="37dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibNewPostSearchPicture"
+        app:srcCompat="@drawable/baseline_send_24"
+        android:contentDescription="@string/publish_ib" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

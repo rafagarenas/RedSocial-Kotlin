@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "140108658466",
+    "project_id": "solidarapp-34c94",
+    "storage_bucket": "solidarapp-34c94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140108658466:android:aec2b38950d8c117ff177b",
+        "android_client_info": {
+          "package_name": "com.example.solidarapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiyersVaicxhe2_eMy5k3Jsrn0F1LC95s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

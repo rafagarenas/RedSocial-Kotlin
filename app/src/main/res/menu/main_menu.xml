@@ -1,0 +1,25 @@
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/settingsItem"
+        android:icon="@drawable/ic_filter"
+        android:visible="true"
+        app:showAsAction="always"
+        android:title="@string/options_menu">
+
+        <menu>
+            <item
+                android:id="@+id/filterAll"
+                android:title="@string/allfilter_menu" />
+            <item
+                android:id="@+id/filterSocialCenters"
+                android:title="@string/socialcenterfilter_menu" />
+            <item
+                android:id="@+id/filterAltruistDonators"
+                android:title="@string/altruistdonatorfilter_menu" />
+        </menu>
+
+    </item>
+
+</menu>

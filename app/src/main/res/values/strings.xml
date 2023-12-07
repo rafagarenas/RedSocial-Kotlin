@@ -1,0 +1,67 @@
+<resources>
+    //URL del Servidor de la API.
+    <string name="API_URL">http://192.168.1.89/</string>
+
+    //Utilidades.
+    <string name="app_name">SolidarApp</string>
+    <string name="home" />
+
+    //change_password_layout.xml
+    <string name="writepassword_tv">Escriba y Confirme su Nueva Contraseña</string>
+    <string name="newpassword_hint">Nueva Contraseña</string>
+    <string name="confirmpassword_hint">Confirmar Contraseña</string>
+    <string name="changepassword_btn">Cambiar Contraseña</string>
+
+    //edit_my_account_layout.xml
+    <string name="newusername_hint">Nuevo Nombre de Usuario</string>
+    <string name="newemail_hint">Nuevo Correo Electrónico</string>
+    <string name="savechanges_btn">Guardar Cambios</string>
+    <string name="changepicture_ib">Cambiar Imagen de Perfil</string>
+
+    //initial_layout.xml
+    <string name="login_btn">Iniciar Sesión</string>
+    <string name="altruistdonator_btn">Soy Donador Altruista</string>
+    <string name="socialcenter_btn">Soy Centro Social</string>
+    <string name="createaccount_tv">¿Eres nuevo? Crea una Cuenta:</string>
+
+    //login_layout.xml
+    <string name="email_hint">Correo Electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="forgotpassword_tv">Olvidé mi Contraseña</string>
+
+    //make_post_layout.xml
+    <string name="accounttype_tv">Tipo de Cuenta</string>
+    <string name="username_tv">Nombre de Usuario</string>
+    <string name="initial_hint">¿En que estás pensando?</string>
+    <string name="publish_ib">Publicar</string>
+    <string name="postpicture_iv">Imagen del Post</string>
+
+    //my_account_layout.xml
+    <string name="emailexample_hint">usuario@correo.com</string>
+    <string name="logout_btn">Cerrar Sesión</string>
+    <string name="exampleregisterdate_hint">Fecha de Ingreso a SolidarApp</string>
+    <string name="madeposts_tv">Publicaciones Hechas</string>
+    <string name="obtaineddonations_tv">Donaciones Obtenidas</string>
+    <string name="postscounter_tv">0</string>
+
+    //posts_structure.xml
+    <string name="examplepostdescription_tv">Cuerpo o Descripción de la Publicación en Cuestión.</string>
+    <string name="examplepostlikes_tv">A 3 personas les gusta esto.</string>
+    <string name="examplepostdate_tv">07 de septiembre de 2002</string>
+    <string name="examplepostusername_tv">Usuario</string>
+
+    //recovery_key_layout.xml
+    <string name="checkemail_tv">Revise la Clave de Recuperación recibida en su Correo Electrónico.</string>
+    <string name="recoverkey_hint">Clave de Recuperación</string>
+    <string name="checkcode_btn">Verificar Código</string>
+    <string name="recoveryemail_hint">Correo de Recuperación</string>
+    <string name="continue_btn">Continuar</string>
+    <string name="recoveraccount_tv">Ingrese el Correo Electrónico asociado a su Cuenta SolidarApp.</string>
+
+    //main_menu.xml
+    <string name="options_menu">Opciones</string>
+    <string name="socialcenterfilter_menu">Filtrar Centros Sociales</string>
+    <string name="altruistdonatorfilter_menu">Filtrar Donadores Altruistas</string>
+    <string name="allfilter_menu">Todos</string>
+
+</resources>

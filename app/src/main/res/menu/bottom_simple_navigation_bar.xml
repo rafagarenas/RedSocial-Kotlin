@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/btnMenuFeed"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/btnMenuCreatePost"
+        android:icon="@drawable/ic_add"
+        android:title="Crear Publicación" />
+
+    <item
+        android:id="@+id/btnMenuMyAccount"
+        android:icon="@drawable/ic_account_white"
+        android:title="Mi Cuenta" />
+</menu>
